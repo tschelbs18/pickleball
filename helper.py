@@ -61,7 +61,7 @@ def arrange_players(players, game_size):
         players = players[2:]
         teams = list(chunks(players, game_size))
         df = combine_doubles(teams)
-        df2 = pd.DataFrame([[two[0]], two[1]], columns=['Team 1', 'Team 2'])
+        df2 = pd.DataFrame([[two[0], two[1]]], columns=['Team 1', 'Team 2'])
         df = pd.concat([df, df2], ignore_index=True)
     elif len(players) % game_size == 3:
         # Create all doubles matches, 1 canadian doubles match
