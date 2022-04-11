@@ -14,7 +14,6 @@ st.title("🎾 Lori's Pickleball App 🎾")
 st.subheader('Fill out the form below to generate matchups')
 num_players = st.selectbox('Input the number of players from 4 to 40', [
     x for x in range(4, 41)])
-f'You selected: {num_players} players'
 match_type = st.selectbox('Select the match type', ['', 'Singles', 'Doubles'])
 rounds = st.selectbox('Select number of rounds', [x for x in range(1, 11)])
 
