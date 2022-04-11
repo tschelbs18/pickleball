@@ -1,6 +1,6 @@
 """
 # Pickleball App
-# Dev log: need to input rounds as an input - generate multiple distinct random rounds to maximize player coverage
+# Dev log: styling update to dataframes? check with Lori on utility / form?
 """
 
 import streamlit as st
@@ -45,9 +45,3 @@ if num_players and match_type and rounds:
         # Output results
         st.subheader(f'Round {i + 1}')
         st.dataframe(results)  # add a styler?
-
-# Pseudocode
-# Determine random weights for playing with same player (2) or against same player (1)
-# Do X iterations, and find a combo with minimum weights
-# Store history of who played with who and who played against who
-# Use this history to calculate score
